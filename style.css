@@ -1,1 +1,165 @@
 
+
+/* Arka palan rengi ve yazi tipi  */
+body{
+
+    background-color:#3e3e3e;  /* Arxa fon rengi */
+    color: rgb(255, 255, 255);    /* Default yazilar ag reng */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* şrift */
+
+    margin: 0;                 /*Kenar bosluqlari sifirlama */
+    padding: 0;
+    
+}
+
+/* Giris metninin olcu nizamlama  */
+.Head{
+  display: flex;   /*yan yana duzur sekili   */
+  aligin-items: center; /* yuxardan asagiya ortalam  */
+  justify-content: space-between;/*  */
+  gap: 50px;/*ara mesafesi   */
+  padding: 100px 15%;/* Üstdən 100 piksel, sağ-soldan isə ekranın 10%-i qədər boşluq burax */
+}
+
+
+
+
+
+
+
+/* Cubugun ustundeki noqte*/
+.matrix-point{
+
+    width: 21px;
+    height: 21px;
+    background-color: rgb(0, 255, 127);
+    border-radius: 100%;
+
+    position:absolute;
+    top:  -5px;
+    left: -13px;
+
+} 
+
+
+/*Sol kenardaki cubuq  */
+.Title{
+    
+    border-left: 5px solid  rgb(0, 255, 127); /* Sol tərəfə 4 piksel qalınlığında, bənövşəyi, düz bir xətt çək */
+    padding-left: 30px;  /* Yazılar bu xəttə yapışmasın deyə xətlə yazı arasında boşluq qoy */
+
+
+    position: relative; /* Bu çox mühümdür! Nöqtəni bu qutuya əsasən yerləşdirə bilmək üçün ünvanı sabitləyirik. */
+    padding-top: 10px; /* Yazıların üzərində 10 piksel boşluq burax ki, xətt mətndən yuxarıda başlasın. */
+    margin-left: 20px; /* Bütün qutunu sol divardan bir az içəri çək ki, xətt nizamla dursun. */
+} 
+
+
+
+
+
+/*  ilk giris metni Salan Arif  */
+.Title h1{
+
+    font-size: 4rem;   /* Yazının ölçüsünü şəkildəki kimi nəhəng et */
+    font-weight: 800;   /* Yazını ekstra qalın (bold) et */
+
+    line-height:0.5;
+    margin: 0px 0 20px 0; /* Altdakı sətirlə arasında 20 piksel boşluq burax */
+   
+}
+.Rengli-text{
+  color: rgb(255, 0, 127);
+}
+.el-anim {
+  display: inline-block;
+  animation: anim 2.5s infinite; /* 2.5 saniyede loop icinde */
+  transform-origin: 70% 110%; /* elin merkezi */
+}
+
+@keyframes anim {
+  0% { transform: rotate( 0.0deg) }
+  10% { transform: rotate(14.0deg) }  /* saga yuxari  qaldirma */
+  20% { transform: rotate(-8.0deg) }  /*sola tereg - */
+  30% { transform: rotate(14.0deg) }
+  40% { transform: rotate(-4.0deg) }
+  50% { transform: rotate( 10.0deg) }
+  60% { transform: rotate( 0.0deg) }  /* gozle  */
+  100% { transform: rotate( 0.0deg) }
+}
+
+
+
+
+
+
+/* //animasiyali regnli text  */
+.Subtitle{
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0 0 15px 0;
+}
+#yazi-anim{
+   color: rgb(0, 255, 127);
+}
+.typed-cursor{
+  color: rgb(0, 255, 127);
+}
+
+
+
+
+
+/*   girisdeki 3 ag metin */
+.End-text{
+  font-size: 2rem;
+  font-weight: bold;
+  max-width:90%;/* Yazı ekran boyu uzanıb çirkin durmasın, 600 pikseldən sonra alt sətrə keçsin */
+  line-height: 1.5;   /* Sətirlərin arasındakı məsafəni (hündürlüyü) nizamla */
+}
+
+
+
+
+/*Skill logolari */
+
+#Skills h2{
+  text-align: center;
+  font-size: 40px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text
+
+
+}
+
+
+.icon-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex: wrap;
+  margin-top: 20px;
+
+}
+.skill-icon {
+    display: inline-block;
+    font-size: 100px;          /* Hepsini aynı anda 60px yapar */
+    transition: 0.3s;         /* Üzerine gelince animasyonlu olması için */
+}
+.skill-icon:hover {
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+
+/* EN sondaki muellif texti  */
+footer{
+
+    color:rgb(0, 255, 0);
+    text-align: center;
+    padding: 40px 0;
+
+}
+
