@@ -1,210 +1,115 @@
 <!DOCTYPE html>
-<html lang="tr">
+<html lang="az">
+
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Arif Dev Page</title>
-<style>
-body {
-  margin: 0;
-  font-family: "Segoe UI", sans-serif;
-  background: linear-gradient(135deg, #ece9e6, #ffffff);
-}
-header {
-  background: #111;
-  color: #fff;
-  text-align: center;
-  padding: 20px 0;
-}
-main {
-  max-width: 900px;
-  margin: 40px auto;
-  padding: 0 20px;
-  text-align: center;
-}
-h1 {
-  margin-bottom: 10px;
-  letter-spacing: 1px;
-}
-p {
-  color: #444;
-  line-height: 1.6;
-}
+    
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale=1.0">
+   
+     <title>Portfolio</title>
+    <!--<meta name="author" content="Sənin Adın">-->
+ 
 
-/* Chat/Destek butonu */
-#support-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  background: #111;
-  color: white;
-  font-size: 22px;
-  padding: 14px 18px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  transition: all 0.3s ease;
-  z-index: 9999;
-}
-#support-btn:hover {
-  background: #333;
-  transform: scale(1.1);
-}
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+          
+    <script
+  src="https://unpkg.com/@lottiefiles/dotlottie-wc@0.9.14/dist/dotlottie-wc.js"
+  type="module"
+></script>
 
-/* Chat kutusu */
-#support-box {
-  display: none;
-  position: fixed;
-  bottom: 85px;
-  right: 20px;
-  width: 320px;
-  background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
-  overflow: hidden;
-  animation: fadeIn 0.3s ease;
-  z-index: 9999;
-}
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(15px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-#support-header {
-  background: #111;
-  color: #fff;
-  padding: 12px;
-  text-align: center;
-  font-weight: bold;
-  letter-spacing: 0.5px;
-}
-#support-tabs {
-  display: flex;
-  background: #f0f0f0;
-  border-bottom: 1px solid #ddd;
-}
-.tab {
-  flex: 1;
-  padding: 8px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 14px;
-  transition: 0.2s;
-}
-.tab.active {
-  background: #fff;
-  font-weight: bold;
-  border-bottom: 2px solid #111;
-}
-#tab-content {
-  padding: 12px;
-}
-
-/* Form stilleri */
-input, textarea {
-  width: 100%;
-  margin-bottom: 10px;
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  font-size: 14px;
-}
-button {
-  width: 100%;
-  padding: 10px;
-  background: #111;
-  color: white;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-}
-button:hover {
-  background: #333;
-}
-.bot-text {
-  color: #555;
-  font-size: 14px;
-  background: #f4f4f4;
-  border-radius: 8px;
-  padding: 10px;
-}
-</style>
 </head>
 <body>
+<!-- ----------------------------------------------------------- -->
 
-<header>
-  <h1>Arif Dev Page</h1>
-</header>
+<section class="Head">
+    <div class="Title">
+        <span class="matrix-point"></span>  <!--  matrix noqte  -->
+        
+        <h1>Hi, I'm <span class="Rengli-text">Arif</span><span class="el-anim">👋</span></h1>
+        
+        <p class="Subtitle">I'm a <span id="yazi-anim"></span></p>
+        
+        <p class="End-text">Welcome to my portfolio, please view on desktop for an interactive experience!</p>
 
-<main>
-  <h2>Hoşgeldin!</h2>
-  <p>Bu site projelerim ve iletişim için. Sağ alttaki 💬 simgesine tıklayarak bana mesaj gönderebilir veya bot ile konuşabilirsin.</p>
-</main>
-
-<!-- Chat/Destek butonu -->
-<div id="support-btn">💬</div>
-
-<!-- Chat kutusu -->
-<div id="support-box">
-  <div id="support-header">Destek Paneli</div>
-  <div id="support-tabs">
-    <div class="tab active" data-tab="form">Mesaj Gönder</div>
-    <div class="tab" data-tab="bot">Bot</div>
-  </div>
-
-  <div id="tab-content">
-    <!-- Form Sekmesi -->
-    <div id="form-tab">
-      <form id="supportForm">
-        <input type="text" name="name" placeholder="Adınız (opsiyonel)">
-        <input type="email" name="email" placeholder="Emailiniz" required>
-        <textarea name="message" placeholder="Mesajınız" required></textarea>
-        <button type="submit">Gönder</button>
-      </form>
     </div>
+        <dotlottie-wc
+            src="https://lottie.host/ecd11268-b061-4bb0-8e61-a86a809cb35d/Nk0U7vLRTA.lottie"
+            style="width: 500px;height: 500px; flex-shrink: 0;"
+            autoplay
+            loop>  
+        </dotlottie-wc>
+</section>
 
-    <!-- Bot Sekmesi -->
-    <div id="bot-tab" style="display:none;">
-      <div class="bot-text">🤖 Merhaba! Ben test botuyum. Şu anda sohbet özelliği aktif değil ama yakında buradan Arif'in AI botuyla konuşabileceksin.</div>
+
+<!--   -->
+
+<section id="Skills">
+    <h2>Skills</h2>
+
+    <div class="icon-container">
+        
+            <i class="devicon-cplusplus-plain colored skill-icon"></i>        
+            <i class="devicon-opengl-plain colored skill-icon"></i>
+            
+            <i class="devicon-unity-plain colored skill-icon"></i>        
+            <i class="devicon-csharp-plain colored skill-icon"></i>
+          
+            <i class="devicon-html5-plain colored skill-icon"></i>        
+            <i class="devicon-css3-plain colored skill-icon"></i>  
+
+            <i class="devicon-android-plain colored skill-icon"></i>
+            
+            <i class="devicon-kotlin-plain colored skill-icon"></i>
+          
+            
+            <i class="devicon-cmake-plain skill-icon"></i>
+          
+            
+            <i class="devicon-blender-original colored skill-icon"></i>
+          
+          
+            <i class="devicon-github-original colored skill-icon"></i>         
+            <i class="devicon-ubuntu-plain colored skill-icon"></i>       
+           
+            <i class="devicon-linux-plain colored skill-icon"></i>
+            
     </div>
-  </div>
-</div>
+</section>
 
-<script>
-const btn = document.getElementById("support-btn");
-const box = document.getElementById("support-box");
-btn.onclick = () => {
-  box.style.display = box.style.display === "block" ? "none" : "block";
-};
 
-// Sekmeler
-const tabs = document.querySelectorAll(".tab");
-tabs.forEach(t => t.addEventListener("click", () => {
-  tabs.forEach(x => x.classList.remove("active"));
-  t.classList.add("active");
-  document.getElementById("form-tab").style.display = t.dataset.tab === "form" ? "block" : "none";
-  document.getElementById("bot-tab").style.display = t.dataset.tab === "bot" ? "block" : "none";
-}));
 
-// Form gönder
-document.getElementById("supportForm").addEventListener("submit", async (e) => {
-  e.preventDefault();
-  const data = new FormData(e.target);
 
-  const URL = "https://script.google.com/macros/s/AKfycbxkJUIuN_xU0RPYTQzrkzt0ByAwwo0nhCk0KQMO1zWgEM_apfdEXVpitz224WwTInJfVg/exec";
+   
 
-  await fetch(URL, {
-    method: "POST",
-    mode: "no-cors",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(data).toString()
-  });
 
-  alert("Mesaj gönderildi ✅");
-  e.target.reset();
-  box.style.display = "none";
-});
-</script>
+<dotlottie-wc
+  src="https://lottie.host/1f0dd78a-d02a-4aed-8373-646e1b29b21d/7EXfiP6r3Q.lottie"
+  style="width: 500px;height: 500px; flex-shrink: 0;"
+  autoplay
+  loop
+></dotlottie-wc>
+
+
+<dotlottie-wc
+  src="https://lottie.host/f9504a2d-fbab-484a-a1cb-8484302aacdb/NMfQ4Y3041.lottie"
+  style="width: 500px;height: 500px; flex-shrink: 0;"
+  autoplay
+  loop
+></dotlottie-wc>
+
+
+<!-- tellif huhquqh logosu  --> 
+<footer>
+    <p>&copy; 2026 Developed by Arif</p>
+</footer>
+
+
+
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="script.js"></script>
 
 </body>
 </html>
